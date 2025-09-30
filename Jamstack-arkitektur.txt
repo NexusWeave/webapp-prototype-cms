@@ -1,0 +1,9 @@
+.
+├── data
+│   └── lnadingpage.json
+├── Jamstack-arkitektur.txt
+├── package.json
+└── pages
+    └── landingpage.ts
+
+3 directories, 4 files
