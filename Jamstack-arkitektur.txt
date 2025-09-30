@@ -1,9 +1,25 @@
 .
-├── data
-│   └── lnadingpage.json
+├── admin
+│   ├── config.yml
+│   └── index.html
 ├── Jamstack-arkitektur.txt
+├── netlify.toml
 ├── package.json
-└── pages
-    └── landingpage.ts
+├── package-lock.json
+├── README.md
+├── _src
+│   ├── _data
+│   │   ├── employees.json
+│   │   ├── intro.json
+│   │   ├── landingpage.json
+│   │   ├── open.json
+│   │   └── startit.json
+│   └── _pages
+│       ├── employees.ts
+│       ├── intro.ts
+│       ├── landingpage.ts
+│       ├── open.ts
+│       └── startit.ts
+└── tsconfig.json
 
-3 directories, 4 files
+5 directories, 18 files
