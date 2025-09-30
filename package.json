@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "serve": "@npx @11ty/eleventy --serve"
+    "serve": "npx @11ty/eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
