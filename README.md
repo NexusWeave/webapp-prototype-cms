@@ -18,11 +18,12 @@ For å bli kjent med prosjektets oppbygning, er det viktig å forstå hvordan ko
 
 Denne prototypen følger delvis standarden som er typisk for **11ty** og **Decap** 
 
-
-
 | Katalog | Formål og rolle |
 | ------- | --------------- |
-| _includes | Inneholder gjenbrukbare HTML-komponenter og maler. Dette sikrer en konsistens og effektiv gjenbrukbar kode på tvers av prototypen |
-| _site | **Publiseringsmappe** - Denne mappen genereres av 11ty under byggetiden og inneholder de ferdige statiske, HTML, CSS og javascript-filene som leveres til nettleseren. |
+| **_includes** | Inneholder gjenbrukbare HTML-komponenter og maler. Dette sikrer en konsistens og effektiv gjenbrukbar kode på tvers av prototypen |
+| **_site** | **Publiseringsmappe** - Denne mappen genereres av 11ty under byggetiden og inneholder de ferdige statiske, HTML, CSS og javascript-filene som leveres til nettleseren. |
+| **_data/** | Her legges data som brukes av 11ty-malene og som ikke er knyttet til en spesifikk side, men til hele nettstedet. Dette kan inkludere navigasjonsstrukturer eller globale innstillinger. |
+| **admin/** | CMS-Backend. Denne mappen (som oftest inneholder en index.html og config.yml) fungerer som det administrative grensesnittet for Decap CMS. Dette er siden redaktørene logger seg på for å redigere innholdet. |
+**admin/config.yml** | CMS-Struktur. Den viktigste filen i mappen. Den definerer nøyaktig hvilke kolleksjoner (f.eks. Artikler, Forside) og hvilke felt (f.eks. Overskrift, Ingress) som er tilgjengelige for redaktørene. |
 
 For å få en visuell presentasjon av hvordan komponentene henger sammen i arkitekturen, vennligst les [./jamstack-architecture.txt](./Jamstack-arkitektur.txt)
