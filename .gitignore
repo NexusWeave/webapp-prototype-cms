@@ -1,0 +1,25 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Midlertidig bygg for Eleventy
+.11ty-build/
+_site/
+
+# Editor/IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Miljø
+.env
+.env.*
+
+# Netlify
+.netlify/
