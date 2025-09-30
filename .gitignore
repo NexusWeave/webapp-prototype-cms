@@ -20,6 +20,7 @@ Thumbs.db
 # Miljø
 .env
 .env.*
+package-lock.json
 
 # Netlify
 .netlify/
