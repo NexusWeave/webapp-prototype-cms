@@ -44,18 +44,18 @@ function generateElement(element: string)
 
 function header()
 {
-    `
+   return `
     <header>
     <button>log out</button>
     </header>
-    `
+    `;
 }
 
 function footer() {
-    `
+  return  `
     <footer>
     Lorem ipsum dolor sit amet
     <footer/>
-    `
+    `;
 }
 createPage();
