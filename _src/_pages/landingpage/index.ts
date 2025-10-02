@@ -1,12 +1,4 @@
-// Note: Authorization needed
-
-// Validate JWT and extract user information
-// page logic here
-
-// Import logic
-import {header, footer} from '../landingpage/index';
-// main
-
+export {header, footer};
 const arr: Array<string> =
 [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel eleifend diam. Suspendisse sed lorem ut nisl placerat fermentum. Etiam vel faucibus enim, in congue justo. Donec cursus felis nec dui porttitor, sit amet pharetra sem ultricies. Proin et tempor lorem, eu faucibus dui. Curabitur dapibus a sapien ut tristique. Suspendisse fermentum iaculis sem, vitae laoreet ipsum pharetra eget. In ac vehicula felis. Mauris sed magna sed neque ultricies egestas. Praesent fermentum dignissim turpis, vel commodo odio porttitor et. Phasellus et risus felis. Sed euismod ornare porttitor.",
@@ -15,6 +7,7 @@ const arr: Array<string> =
 ];
 function createPage()
 {
+    const page = document.querySelector('app-root');
 
     const html /*HTML*/ = `
     ${header()}
@@ -23,13 +16,13 @@ function createPage()
     </main>
     ${footer()}
     `
-    return html;
+    page.innerHTML = html;
 }
 
 function mainContent()
 {
     return /*HTML*/`
-    <h2>Public Page</h2>
+    <h2>Main Page</h2>
     ${generateElement('section')}
     `;
 }
@@ -49,4 +42,20 @@ function generateElement(element: string)
     return html;
 }
 
+function header()
+{
+   return `
+    <header>
+    <button>log out</button>
+    </header>
+    `;
+}
+
+function footer() {
+  return  `
+    <footer>
+    Lorem ipsum dolor sit amet
+    <footer/>
+    `;
+}
 createPage();

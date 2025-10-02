@@ -4,7 +4,7 @@
 // page logic here
 
 // Import logic
-import {header, footer} from '../landingpage';
+import {header, footer} from '../landingpage/index';
 
 // main
 
