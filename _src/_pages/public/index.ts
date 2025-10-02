@@ -15,7 +15,6 @@ const arr: Array<string> =
 ];
 function createPage()
 {
-    const page = document.querySelector('app-root');
 
     const html /*HTML*/ = `
     ${header()}
@@ -24,7 +23,7 @@ function createPage()
     </main>
     ${footer()}
     `
-    page.innerHTML = html;
+    return html;
 }
 
 function mainContent()
