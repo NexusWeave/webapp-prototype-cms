@@ -1,6 +1,6 @@
 //  Imports and interface Logic
 
-interface JWTPayLoadClaims
+interface AuthClaims
 {
     iss: string;
     aud: string;
@@ -11,7 +11,7 @@ interface JWTPayLoadClaims
     scope?: Array<string>;
 }
 
-function Base64Url(token: string): JWTPayLoadClaims
+function Base64Url(token: string): AuthClaims
 {
     // Example decoder
 
@@ -29,6 +29,6 @@ function Base64Url(token: string): JWTPayLoadClaims
         return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
     }).join(''));
 
-    return JSON.parse(utf8) as JWTPayLoadClaims;
+    return JSON.parse(utf8) as AuthClaims;
 
 }
