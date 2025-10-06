@@ -1,4 +1,5 @@
-export {header, footer};
+import { loginContent } from '../login/index';
+
 const arr: Array<string> =
 [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel eleifend diam. Suspendisse sed lorem ut nisl placerat fermentum. Etiam vel faucibus enim, in congue justo. Donec cursus felis nec dui porttitor, sit amet pharetra sem ultricies. Proin et tempor lorem, eu faucibus dui. Curabitur dapibus a sapien ut tristique. Suspendisse fermentum iaculis sem, vitae laoreet ipsum pharetra eget. In ac vehicula felis. Mauris sed magna sed neque ultricies egestas. Praesent fermentum dignissim turpis, vel commodo odio porttitor et. Phasellus et risus felis. Sed euismod ornare porttitor.",
@@ -42,16 +43,17 @@ function generateElement(element: string)
     return html;
 }
 
-function header()
+export function header()
 {
    return `
     <header>
+    ${loginContent()}
     <button>log out</button>
     </header>
     `;
 }
 
-function footer() {
+export function footer() {
   return  `
     <footer>
     Lorem ipsum dolor sit amet
