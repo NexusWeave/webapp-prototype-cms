@@ -1,4 +1,4 @@
-import { loginContent } from '../login/index';
+import { loginContent } from '../login/index.js';
 
 const arr: Array<string> =
 [
@@ -12,9 +12,7 @@ function createPage()
 
     const html /*HTML*/ = `
     ${header()}
-    <main>
     ${mainContent()}
-    </main>
     ${footer()}
     `
     page.innerHTML = html;
@@ -23,8 +21,11 @@ function createPage()
 function mainContent()
 {
     return /*HTML*/`
+    <main>
     <h2>Main Page</h2>
+
     ${generateElement('section')}
+    </main>
     `;
 }
 
@@ -48,6 +49,10 @@ export function header()
    return `
     <header>
     ${loginContent()}
+    <nav>
+        <a href="/">Main</a>
+        <a href="/public">Public</a>
+    </nav>
     <button>log out</button>
     </header>
     `;
