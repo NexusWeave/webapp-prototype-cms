@@ -1,7 +1,7 @@
 import esbuild from "esbuild";
 
 export default function(eleventyConfig) {
-  eleventyConfig.addTemplateFormats("ts");
+  //eleventyConfig.addTemplateFormats("ts");
   eleventyConfig.addExtension("ts", {
     outputFileExtension: "js",
     compile: async (contents, inputPath) => {
@@ -20,6 +20,16 @@ export default function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "admin": "admin" });
   eleventyConfig.addPassthroughCopy({ "assets": "assets" });
-  //eleventyConfig.addPassthroughCopy({ "public": "public" });
+  eleventyConfig.addPassthroughCopy({ "_src/utils": "login" });
+    return {
+      dir: {
+        input: "_src",
+        output: "_site",
+        includes: "_includes"
+      },
+      htmlTemplateEngine: "njk",
+      markdownTemplateEngine: "njk",
+      templateFormats: ["njk", "md", "html", "ts"],
+    };
 
 };
