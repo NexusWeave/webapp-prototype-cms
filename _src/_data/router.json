@@ -1,9 +1,8 @@
 {
     "routes":
     [
-        { "name": "Home", "path": "/" },
-        { "name": "intro", "path": "/intro/" }, 
-        { "name": "login", "path": "/login/" },
+        { "name": "Home", "path": "/"},
+        { "name": "intro", "path": "/intro/" },
         { "name": "public", "path": "/public/" }, 
         { "name": "startit", "path": "/startit/" },
         { "name": "employees", "path": "/employees/" }
