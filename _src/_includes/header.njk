@@ -1,7 +1,31 @@
 <header>
+        <div>
+        {% if user.isLoggedIn %}
+            <a href="/logout">Logout</a>
+        {% else %}
+                    <form onsubmit="handleSubmission(event)" id="loginForm" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            
+        {% endif %}
+
+    </div>
     <nav>
         {% for link in router.routes %}
             <a href="{{ link.path }}">{{ link.name }}</a>
         {% endfor %}
     </nav>
+
 </header>
+
+<script>
+    function handleSubmission(event) {
+    event.preventDefault();
+    console.log("Form submitted");
+    }
+</script>
