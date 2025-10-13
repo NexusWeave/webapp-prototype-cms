@@ -1,0 +1,7 @@
+<header>
+    <nav>
+        {% for link in router.routes %}
+            <a href="{{ link.path }}">{{ link.name }}</a>
+        {% endfor %}
+    </nav>
+</header>

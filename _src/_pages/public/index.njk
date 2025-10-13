@@ -1,5 +1,6 @@
 ---
 title: Prototype
+heading: Public Page
 ---
 <!doctype html>
 <html lang="en">
@@ -9,7 +10,7 @@ title: Prototype
     <title>{{ title }}</title>
   </head>
   <body>
-    <app-root></app-root>
-    <script type="module" src="index.js"></script>
+    {% include 'header.njk' %}
+    {% include 'main.njk' %}
   </body>
 </html>

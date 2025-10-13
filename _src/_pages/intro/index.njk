@@ -9,7 +9,8 @@ title: Prototype
     <title>{{ title }}</title>
   </head>
   <body>
-    <app-root></app-root>
+    {% include 'header.njk' %}
+    {% include 'main.njk' %}
     <script type="module" src="index.js"></script>
   </body>
 </html>
