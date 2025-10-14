@@ -5,6 +5,6 @@
         { "name": "intro", "path": "/intro/" },
         { "name": "public", "path": "/public/" }, 
         { "name": "startit", "path": "/startit/" },
-        { "name": "employees", "path": "/employees/" }
+        { "name": "employee", "path": "/employee/" }
     ]
 }
