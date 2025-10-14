@@ -1,0 +1,11 @@
+/admin/* /admin/:splat 200! Role=admin
+/intro/* /intro/:splat 200! Role=intro
+/startIT/* /startIT/:splat 200! Role=startIT
+/employee/* /employee/:splat 200! Role=employee
+
+[redirects]
+#   Maskering av feilkoder  Omdirigering til hjemme side
+/* / 401
+/* / 404
+
+
