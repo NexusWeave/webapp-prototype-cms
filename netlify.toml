@@ -9,14 +9,14 @@ conditions = {Role=["admin"]}
 from = "/intro/*"
 to = "/intro/:splat"
 status = 200
-conditions = {Role=["intro"]}
+conditions = {Role=["intro", "employee"]}
 
 [[redirects]]
 from = "/startit/*" 
 to = "/startit/:splat"
 status = 200
 force = true
-conditions = {Role=["startIT"]}
+conditions = {Role=["startIT", "employee"]}
 
 [[redirects]]
 from = "/employee/*" 
