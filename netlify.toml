@@ -1,11 +1,39 @@
-/admin/* /admin/:splat 200! Role=admin
-/intro/* /intro/:splat 200! Role=intro
-/startIT/* /startIT/:splat 200! Role=startIT
-/employee/* /employee/:splat 200! Role=employee
+[[redirects]]
+from = "/admin/*" 
+to = "/admin/:splat"
+status = 200
+force = true
+conditions = {Role=["admin"]}
 
-[redirects]
+[[redirects]]
+from = "/intro/*"
+to = "/intro/:splat"
+status = 200
+conditions = {Role=["intro"]}
+
+[[redirects]]
+from = "/startit/*" 
+to = "/startit/:splat"
+status = 200
+force = true
+conditions = {Role=["startIT"]}
+
+[[redirects]]
+from = "/employee/*" 
+to = "/employee/:splat"
+status = 200
+force = true
+conditions = {Role=["employee"]}
+
 #   Maskering av feilkoder  Omdirigering til hjemme side
-/* / 401
-/* / 404
+[[redirects]]
+from = "/*" 
+to = "/"
+status = 401
+force = true
 
-
+[[redirects]]
+from = "/*"
+to = "/"
+status = 404
+force = true
