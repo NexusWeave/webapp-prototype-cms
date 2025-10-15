@@ -9,21 +9,21 @@ conditions = {Role=["admin"]}
 from = "/intro/*"
 to = "/intro/:splat"
 status = 200
-conditions = {Role=["intro", "employee"]}
+conditions = {Role=["intro", "employee", "admin"]}
 
 [[redirects]]
 from = "/startit/*" 
 to = "/startit/:splat"
 status = 200
 force = true
-conditions = {Role=["startIT", "employee"]}
+conditions = {Role=["startIT", "employee", "admin"]}
 
 [[redirects]]
 from = "/employee/*" 
 to = "/employee/:splat"
 status = 200
 force = true
-conditions = {Role=["employee"]}
+conditions = {Role=["employee", "admin"]}
 
 #   Maskering av feilkoder  Omdirigering til hjemme side
 [[redirects]]
