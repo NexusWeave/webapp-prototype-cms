@@ -1,0 +1,20 @@
+
+backend:
+  name: test-repo
+  branch: main # Change this to your main branch name (e.g., 'main' or 'master')
+
+# Konfigurer media- og publiseringsbaner
+media_folder: "src/assets/uploads" # Where images/files will be stored in your repo
+public_folder: "/assets/uploads" # The path used in frontmatter/templates
+
+# Definer Collections (innholdstyper)
+collections:
+  - name: "Intro"
+    label: "Redigering av intro-side"
+    folder: "content/_pages/intro" # 11ty reads content from this folder
+    create: true # Allows creating new posts
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Generates file path/name
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}

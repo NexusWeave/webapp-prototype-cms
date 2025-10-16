@@ -5,6 +5,7 @@
         { "name": "intro", "path": "/intro/index.html" },
         { "name": "public", "path": "/public/" }, 
         { "name": "startit", "path": "/startit/index.html" },
-        { "name": "employee", "path": "/employee/index.html" }
+        { "name": "employee", "path": "/employee/index.html" },
+        { "name": "webmaster", "path": "/admin/index.html" }
     ]
 }
