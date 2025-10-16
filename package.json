@@ -2,7 +2,8 @@
   "scripts": {
     "serve": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "dev": "npx @11ty/eleventy --serve"
+    "dev": "npx @11ty/eleventy --serve",
+    "deploy": "npx netlify deploy --dir=./_site"
   },
   "type": "module",
   "devDependencies": {

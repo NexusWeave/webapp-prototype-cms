@@ -2,9 +2,9 @@
     "routes":
     [
         { "name": "Home", "path": "/"},
-        { "name": "intro", "path": "/intro/" },
+        { "name": "intro", "path": "/intro/index.html" },
         { "name": "public", "path": "/public/" }, 
-        { "name": "startit", "path": "/startit/" },
-        { "name": "employee", "path": "/employee/" }
+        { "name": "startit", "path": "/startit/index.html" },
+        { "name": "employee", "path": "/employee/index.html" }
     ]
 }

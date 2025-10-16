@@ -1,6 +1,4 @@
-admin@dropjar.com,
+demowebmaster@dropjar.com
 employee@dropjar.com,
 start-it@dropjar.com,
-intro@dropjar.com,
-
 (https://inboxes.com/)
