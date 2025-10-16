@@ -1,39 +1,40 @@
+#
 [[redirects]]
-from = "/admin/*" 
-to = "/admin/:splat"
-status = 200
-force = true
-conditions = {Role=["admin"]}
+    from = "/admin/*" 
+    to = "/admin/:splat"
+    status = 200
+    force = true
+    conditions = {Role=["Webmaster"]}
 
 [[redirects]]
-from = "/intro/*"
-to = "/intro/:splat"
-status = 200
-conditions = {Role=["intro", "employee", "admin"]}
+    from = "/intro/*"
+    to = "/intro/:splat"
+    status = 200
+    conditions = {Role=["intro", "employee", "Webmaster"]}
 
 [[redirects]]
-from = "/startit/*" 
-to = "/startit/:splat"
-status = 200
-force = true
-conditions = {Role=["startIT", "employee", "admin"]}
+    from = "/startit/*" 
+    to = "/startit/:splat"
+    status = 200
+    force = true
+    conditions = {Role=["startIT", "employee", "Webmaster"]}
 
 [[redirects]]
 from = "/employee/*" 
 to = "/employee/:splat"
 status = 200
 force = true
-conditions = {Role=["employee", "admin"]}
+conditions = {Role=["employee", "Webmaster"]}
 
 #   Maskering av feilkoder  Omdirigering til hjemme side
 [[redirects]]
-from = "/*" 
-to = "/"
-status = 401
-force = true
+    from = "/*" 
+    to = "/"
+    status = 401
+    force = true
 
 [[redirects]]
-from = "/*"
-to = "/"
-status = 404
-force = true
+    from = "/*"
+    to = "/"
+    status = 404
+    force = true
